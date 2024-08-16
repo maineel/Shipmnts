@@ -4,7 +4,6 @@ import { apiResponseHandler } from "../utils/apiResponseHandler.js";
 import { User } from "../models/user.model.js";
 import { Classroom } from "../models/classroom.model.js";
 import { Task } from "../models/tasks.model.js";
-import { object } from "yup";
 
 const generatAccessAndRefreshTokens = async (user) => {
   const accessToken = user.generateAccessToken();
