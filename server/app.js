@@ -11,7 +11,7 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 app.get('/', (req, res) => {
-    res.send("Welcome to Shipmnts Backend API");
+    res.send("Welcome to ClassConnect");
 })
 
 export { app };
