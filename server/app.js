@@ -14,4 +14,13 @@ app.get('/', (req, res) => {
     res.send("Welcome to ClassConnect");
 })
 
+import { studentRouter } from './routes/student.routes.js';
+app.use('/students', studentRouter);
+
+import { teacherRouter } from './routes/teacher.routes.js';
+app.use('/teachers', teacherRouter);
+
+import { classroomRouter } from './routes/classroom.routes.js';
+app.use('/classrooms', classroomRouter);
+
 export { app };

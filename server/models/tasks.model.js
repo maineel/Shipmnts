@@ -8,23 +8,36 @@ const taskSchema = new Schema(
     },
     description: {
       type: String,
+      required: true,
     },
     classroom: {
       type: Schema.Types.ObjectId,
       ref: "Classroom",
     },
-    student: {
-      type: Schema.Types.ObjectId,
-      ref: "Student",
-    },
     teacher: {
       type: Schema.Types.ObjectId,
       ref: "Teacher",
     },
-    completed: {
-      type: Boolean,
-      default: false,
+    dueDate: {
+      type: String,
+      required: true,
     },
+    submissions: [
+      {
+        studentID: {
+          type: Schema.Types.ObjectId,
+          ref: "Student",
+        },
+        submittedAt: {
+          type: String,
+          required: true,
+        },
+        file: {
+          type: String,
+          required: true,
+        },
+      }
+    ]
   },
   { timestamps: true }
 );
