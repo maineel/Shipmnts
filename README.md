@@ -10,8 +10,11 @@ run commands:<br/>
 - npm run dev<br/>
 
 
-CREATE <br/>
-- .env file<br/>
-- MONGODB_URI=<YOUR_MONGODB_URL><br/>
+CREATE .env file in the server directory and paste<br/>
+- MONGODB_URI=mongodb+srv://neelxdxd:MhK4vT9nVHV0bimk@cluster0.naeem.mongodb.net<br/>
 - PORT=8000<br/>
 - CORS_ORIGIN=*
+- ACCESS_TOKEN_SECRET = ed04696ef8da9ef47e38cf0abce60a206730ea0842f633c3fd074a630d660caa
+- ACCESS_TOKEN_EXPIRY = 1d
+- REFRESH_TOKEN_SECRET = 7c6526871e52ca541cedda10e395437f827738f66f6ea7752c4173460e4fbcc0
+- REFRESH_TOKEN_EXPIRY = 10d 
